@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: Poppins;
+}
+
+.Container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #131219;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  Overflow-x: hidden
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Profile {
+  width: 20vw;
+  border-radius: 50%;
+
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  width: 60%;
+  align-self: center;
+  position: relative;
+  top: 5vw;
+  bottom: 1vw;
+  height: fit-content;
+}
+
+.ContainerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.ContainerAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 3vw;
+}
+
+.ContainerTitle {
+  display: flex;
+  flex-direction: column;
+  color: antiquewhite;
+}
+
+.location {
+  font-size: 1vw;
+}
+
+.About {
+  font-size: 1vw;
+  color: antiquewhite;
+}
+
+.Product {
+  font-size: 0.9vw;
+  color: antiquewhite;
+}
+
+#Name {
+  font-size: 2.5vw;
+}
+
+.Social {
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.Contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.Button {
+  z-index: 999;
+  width: 100%;
+  border-radius: 3px;
+  height: 35px;
+  border: none;
+  color: white;
+  background-color: #363636;
+}
+.Gradient-Border {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 35px;
+  font-family: Lato, sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  background: #222;
+  border-radius: 3px;
+}
+.Gradient-Border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * 3px);
+  left: calc(-1 * 3px);
+  z-index: 1;
+  width: calc(100% + 3px * 2);
+  height: calc(100% + 3px * 2);
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * 3px);
+  animation: moveGradient 2.5s alternate infinite;
+}
+
+
+.TextSkills{
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 2.5vw;
+  text-decoration:underline;
+}
+
+
+.Row{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 10vw;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Skills{
+  width: 70%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+.Cards{
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(255, 255, 255, 0.863);
+  margin: 5%;
+  padding: 1%;
+  transition: all 0.3s ease-out;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+}
+
+.Cadrs h2{
+  text-align: center;
+
+}
+.Cards:hover{
+  transform: translate(-5px);
+  cursor: pointer;
+}
+.Imagens{
+  max-width: 45%;
+  align-self: center;
+}
+
+
+ 
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+a{
+  text-decoration:none; 
+  color : #fff;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
